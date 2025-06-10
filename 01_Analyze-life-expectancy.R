@@ -1,5 +1,7 @@
 ### Part I working alone
 
+#NEW COMMENT NEEDS YOUR REVIEW
+
 # This is a .R file, used for writing code in R
 # Lines that begin with a "#" are comments, and can contain non-code sentences.
 
@@ -17,7 +19,7 @@ library(tidyverse)
 library(broom)
 
 # Data import
-le_datas <- read_csv("./data/Life-expectancy-by-state-long.csv")
+le_datass <- read_csv("./data/Life-expectancy-by-state-long.csv")
 
 # Run a regression model with time coded using a linear term
 mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "California", race == "black", sex == "Female"))
